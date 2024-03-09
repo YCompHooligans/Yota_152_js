@@ -1,0 +1,28 @@
+body{
+    background-image: url('calc.png');
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.bil-nav{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.action1{
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+}
+
+.textarea3{
+    resize: none;
+    text-align:center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator JavaScript Sederhana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="bil-nav">
+    
+        <h1>Kalkulator Tambah/Kurang</h1>
+   
+        <p>Bilangan Pertama</p>
+        <textarea rows="1" cols="15" id="angka1" style="resize: none;"></textarea>
+
+        <p>Bilangan Kedua</p>
+        <textarea rows="1" cols="15" id="angka2" style="resize: none;"></textarea>
+    
+    </div>
+
+    <br>
+    <div class="action1">
+        <button onclick="tambah()">Tambah</button>
+        <button onclick="kurang()">Kurang</button>
+    </div>
+
+    <br>
+    <div class="result">
+        <textarea class="textarea3" rows="1" cols="10" id="hasil" readonly>Hasil</textarea>
+
+    </div>
+
+    <script>
+        function tambah() {
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+            var hasil = angka1 + angka2;
+            document.getElementById("hasil").value = hasil;
+        }
+
+        function kurang() {
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+            var hasil = angka1 - angka2;
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+    
+</body>
+
+</html>
